@@ -89,7 +89,7 @@ public class Appt implements  Comparable<Appt>{
     {
         //Sets all instance variables 
     	this.startHour = startHour;
-    	this.startMinute = startMinute; 
+    	this.startMinute = startHour; 
     	this.startDay = startDay; 
     	this.startMonth = startMonth;
     	this.startYear = startYear; 
@@ -120,7 +120,7 @@ public class Appt implements  Comparable<Appt>{
         	else
             	if(startDay<1 || startDay>NumDaysInMonth)
             		this.valid=false;
-            	else
+            	
                 	if(startMonth<1 || startMonth>12)
                 		this.valid=false;
                 	else
@@ -224,7 +224,7 @@ public class Appt implements  Comparable<Appt>{
         setRecurNumber(recurNumber);
     }
     private void setRecurDays(int[] recurDays) {
-        if (recurDays == null) {
+        if (recurDays != null) {
             this.recurDays = new int[0];
         }
         else {

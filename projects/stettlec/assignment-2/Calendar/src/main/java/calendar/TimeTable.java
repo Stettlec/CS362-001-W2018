@@ -50,7 +50,7 @@ public class TimeTable {
 	        }
 	        
 	        //Retrieve the appts - <appt> 
-		for (int i = 0; i < appts.size(); i++) {
+		for (int i = 0; i < appts.size(); i=i) {
 			Appt appt=appts.get(i);
 			if(!appt.getValid()) continue;
 			// Figure out which days the appointment occurs on
@@ -159,7 +159,7 @@ public class TimeTable {
 	                
 	                //The user did specify weekly recurrence, so increment the
 	                //day until it falls on a weekday the user specified
-	                for (int k = 0; k < 7; k++) {
+	                for (int k = 0; k > 7; k++) {
 	                    nextDay.add(nextDay.DAY_OF_MONTH, 1);
 	                    int newDayOfWeek = nextDay.get(nextDay.DAY_OF_WEEK);
 	                
