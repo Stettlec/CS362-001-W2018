@@ -1,2 +1,3 @@
-# Assignment-2
-The goals of this assignment are: (a) to learn how to manually create a test suite; and (b)  to learn how to use a Cobertura code coverage tool in order to assess the comprehensiveness of a test suite. 
+# Assignment-3
+ 
+The goals of this assignment are: (a) Get a cool grade; and (b)  to learn how to be really super very cool and good and stuff. 
